@@ -14,5 +14,9 @@
     "webpack2"
   ],
   "author": "Parimal Yeole",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^2.5.1",
+    "webpack-server": "^0.1.2"
+  }
 }
