@@ -1,5 +1,7 @@
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 
 module.exports = {
     entry: './src/app.js',
@@ -21,5 +23,10 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin("app.bundle.css"),
+        new HtmlWebpackPlugin({
+            title: 'Webpack 2 try Today',
+            filename: 'app.html',
+            template: './src/index.html'
+        })
     ]
 }   
